@@ -10,6 +10,12 @@
 # Ejercicios con funciones
 
 def promedio(numeros):
+    for i in numeros:
+        sumatoria = sum(numeros)
+        cantidad_numeros = len(numeros)
+        resultado_promedio = sumatoria / cantidad_numeros
+        return resultado_promedio
+
     print("Funcion promedio")
     resultado = 0
     # La función promedio recibe como parámetro una
@@ -38,7 +44,9 @@ if __name__ == '__main__':
     # Alumno: Complete la función "promedio"
 
     # Llamar a la función en este lugar y capturar el valor del retorno
+
     resultado_promedio = promedio(numeros)
+    print(resultado_promedio)
 
     # Luego imprimir en pantalla el valor resultante:
     # print(....)
